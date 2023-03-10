@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 50px;
+        }
+        #text{
+            width: 200px;
+            font-size: 1em;
+            border: 0;
+            border-bottom: 3px solid black;
+            outline: none;
+        }
+        .field-holder{
+            position: relative;
+        }
+        label{
+            font-size: 1em;
+            opacity: 0.75;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            cursor: text;
+            transition: all .35s ease-in-out;
+        }
+        #text, label{
+            height: 50px;
+        }
+        input:focus + label, input:valid ~ label{
+            font-size: .75em;
+            opacity: 0.5;
+            top: -25px;
+            pointer-events: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="field-holder">
+    <input type="text" name="text" id="text" required>
+    <label for="text">First Name</label>  
+    </div>
+
+    <script>
+        const input = document.getElementById("text");
+        input.addEventListener("input", ()=>{
+            if(input.value.length > 0){
+                input.classList.add("has-value")
+            }else{
+                input.classList.remove("has-value")
+            }
+        })
+       
+    </script>
+</body>
+</html>

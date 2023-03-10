@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "poppins";
+    src: url(./Poppins-Medium.ttf);
+}
+*{
+    margin: 0;
+    font-family: "poppins";
+    
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+    padding: 1rem;
+    
+}
+h1{
+    font-size: 3em;
+}   
+h2{
+    font-size: 2em;
+}
+.text p{
+    opacity: 0.5;
+    font-size: 1.5em;
+}
+.title{
+    color: rgb(255, 105, 180);
+    
+}
+.caption{
+    color: rgba(255, 105, 180, 0.53);
+}
+#cards{
+  width: 100%;
+  margin-top: 10px;  
+}
+.priceCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background: #FF47DA;
+    color: whitesmoke;
+}
+.priceCard h2{
+    font-size: 2.5em;
+}
+.priceCard h1 strong{
+    font-size: 3em;
+
+}
+.priceCard h1 span {
+    font-size: 1.3em;
+    color: black;
+    opacity: 0.5;
+}
+.priceCard p{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.priceCard button{
+    
+    padding: 2rem;
+    font-size: 1.5em;
+    color: white;
+    background: linear-gradient(to right, #8D279C, #FF47DA, #FF67C3, #FF47DA, #8D279C);
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 5px black;
+}
+
+.textCard{
+    background: #C637BB;
+    padding: 40px;
+    color: whitesmoke;
+
+}
+
+.textCard ul{
+    list-style: none;
+}
+.textCard ul li{
+    padding: 10px;
+    font-size: 2em;
+    opacity: 0.75;
+}
+.textCard h2{
+    font-size: 3em;
+}
+
+@media (min-width: 850px) and (max-width: 1479px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    #cards{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .priceCard{
+        flex: 1;
+    }
+    .textCard{
+        flex: 1;
+    }
+    .priceCard h2{
+        font-size: 1.25em;
+    }
+    .priceCard h1 strong{
+        font-size: 1.5em;
+    
+    }
+    .priceCard h1 span {
+        font-size: 0.65em;
+        color: black;
+        opacity: 0.5;
+    }
+    .priceCard p{
+        font-size: 0.75em;
+        margin-bottom: 15px;
+    }
+    
+    .priceCard button{
+        
+        padding: 1rem;
+        font-size: 0.75em;
+        
+    }
+    
+    .textCard{
+        background: #C637BB;
+        padding: 20px;
+        color: whitesmoke;
+    
+    }
+    
+    .textCard ul{
+        list-style: none;
+    }
+    .textCard ul li{
+        padding: 5px;
+        font-size: 1em;
+        opacity: 0.75;
+    }
+    .textCard h2{
+        font-size: 1.5em;
+    }
+}
+
+button:hover{
+    scale: 1.05;
+    transform: translateY(-5px);
+}
+
+

@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "poppins";
+    src: url(../Poppins-Medium.ttf);
+}
+body{
+    background: url(./61769.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "poppins";
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    padding: 2.5rem;
+    color: #6153CC;
+}
+.text h1{
+    font-size: 3em;
+}
+.text p {
+    line-height: 2em;
+    opacity: 0.75;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.caption{
+    background-color: #733FB3;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+form{
+    border-radius: 10px;
+    background: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+form div{
+    position: relative;
+    width: 80%;
+}
+.intro{
+    align-self: start;
+    margin-bottom: 45px;
+}
+input{
+    width: 100%;
+    margin-bottom: 60px;
+    font-size: 1em;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+label{
+    font-size: 1em;
+    opacity: 0.75;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    cursor: text;
+    transition: all .35s ease-in-out;
+}
+
+
+input:focus + label, input:valid ~ label{
+    font-size: .75em;
+    opacity: 0.5;
+    top: -25px;
+    pointer-events: none;
+    color: red;
+}
+input:focus, input:valid{
+    border-color: red;
+}
+
+button{
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    color: white;
+    background-color: #17b58e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tC{
+    color: red;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+@media(width >= 1280px){
+    body{
+        height: 100vh;
+        margin: 0;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    form{
+        margin-bottom: 0;
+        padding: 1rem;
+        
+    }
+    .form-container{
+        flex: 1.25;
+       
+    }
+    .caption{
+        width: 92%;
+    }
+    .text{
+        padding: 1.5rem;
+        flex: 1;
+    }
+    .text h1{
+        font-size: 3.5em;
+    }
+
+    form div{
+        width: 90%;
+    }
+    .intro{
+        
+        margin-bottom: 30px;
+    }
+    input{
+        margin-bottom: 40px;
+       
+    }
+
+}

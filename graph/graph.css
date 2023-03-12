@@ -1,0 +1,56 @@
+#myCanvas{
+    border: 5px solid black;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+#equation h1{
+    display: inline;
+    font-size: 4rem;
+}
+#equation input{
+    width: 120px;
+    height: 100px;
+    font-size: 4rem;
+    margin: 10px;
+    text-align: center;
+}
+
+button{
+    background-color: #21AE33;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto 2rem;
+}
+
+#scales div{
+    display: flex;
+}
+
+#scales div small{
+    align-self: flex-end;
+}
+
+#scales div input{
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+.colon{
+    padding: 0 10px 10px 10px;
+}
+
+
+
+
+
+
+
+
+

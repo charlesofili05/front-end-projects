@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grapher</title>
+    <link rel="stylesheet" href="graph.css">
+</head>
+<body>
+    <h1>Grapher</h1>
+    <main>
+      <canvas id="myCanvas" width="500" height="500"></canvas>
+      <section>
+        <h1>Enter a Linear Equation:</h1>
+        <p>The linear equation should be in the form: <em>ay = mx + b</em></p>
+        <p>where m is the gradient</p>
+        <div id="equation">
+            <input type="number" id="y-coefficient"><h1><em>y =</em></h1><input type="number" id="gradient"><h1><em>x +</em></h1><input type="number" id="intercept">
+        </div>
+        <div id="scales">
+          <div>
+           <h1>Scale Y 50units</h1><small>on the graph</small><h1 class="colon">: </h1><input type="number" id="scaleY"> 
+          </div>
+          <div>
+            <h1>Scale X 50units</h1><small>on the graph</small><h1 class="colon">: </h1><input type="number" id="scaleX"> 
+          </div>
+        </div>
+        <div id="btn-cont">
+        <button>PLOT GRAPH</button>          
+        </div>
+
+      </section>  
+    </main>
+    
+    <script src="graph.js"></script>
+</body>
+</html>
